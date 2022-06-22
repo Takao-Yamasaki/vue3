@@ -12,7 +12,7 @@
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
     <!-- マスタッシュ構文 -->
-    <input type="text" v-bind:value="message">
+    <p v-if="toggle">Hello</p>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
