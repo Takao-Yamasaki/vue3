@@ -1,14 +1,7 @@
 const app = Vue.createApp({
   data: () => ({
-    now: '-'
+    message: 'Hello, Vue.js!'
   }),
-  methods: {
-    onClick: function() {
-      // console.log('onClick!')
-      // データオプションのnowプロパティを指す
-      this.now = new Date().toLocaleString()
-      // console.log(this)
-    }
-  }
+  
 })
 app.mount('#app')
