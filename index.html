@@ -11,18 +11,8 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <!-- マスタッシュ構文 -->
-    <ul>
-      <!-- <li v-for="value in user">
-        {{ value }}
-      </li> -->
-      <!-- <li v-for="(value, key) in user">
-        {{ key }}: {{ value }}
-      </li> -->
-      <li v-for="(v, k) in user">
-        {{ k }}: {{ v }}
-      </li>
-    </ul>
+    <button v-on:click="onClick">Click!</button>
+    <p>{{ now }}</p>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
