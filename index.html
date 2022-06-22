@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- ルートのテンプレート -->
+  <!-- Vue.jsが構築したdomに置き換えられる -->
+  <div id="app">
+    <!-- マスタッシュ構文 -->
+    <p> {{message}} </p>
+  </div>
+  {{ message }}
+  <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
