@@ -12,15 +12,8 @@
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
     <!-- マスタッシュ構文 -->
-    <p> {{message}} </p>
-    <!-- 数値 -->
-    <p>{{ count }}</p>
-    <!-- オブジェクト -->
-    <p>{{ user.prefecture }}</p>
-    <!-- 配列 -->
-    <p>{{ colors[1] }}</p>
+    <input type="text" v-bind:value="message">
   </div>
-  {{ message }}
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
