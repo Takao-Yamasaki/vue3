@@ -11,10 +11,7 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <p v-once>{{ message }}</p>
-    <button v-on:click="clickHandler">
-      Click!
-    </button>
+    <p v-pre>{{ message }}</p>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
