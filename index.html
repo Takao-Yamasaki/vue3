@@ -11,8 +11,7 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <p>{{ message }}</p>
-    <p v-html="message"></p>
+    <p v-cloak>{{ message }}</p>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
