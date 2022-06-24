@@ -11,15 +11,8 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <p>{{ message }}</p>
-    <p>{{ number + 1 }}</p>
-    <p>{{ message.split('').reverse().join('') }}</p>
-    <p>{{ ok ? 'YES' : 'NO' }}</p>
-
-    <!-- <p>{{ let x = 1 }}</p> -->
-    <!-- <p>{{ if(ok) { return message } }}</p> -->
-
-    <p>{{ ok ? message : '' }}</p>
+    <a v-bind:href="url">Link1</a><br>
+    <a :href="url">Link2</a>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
