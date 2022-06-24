@@ -11,9 +11,12 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <p><input type="text" v-model="firstName"></p>
-    <p><input type="text" v-model="lastName"></p>
-    <p>fullName: {{ fullName }}</p>
+    <ul>
+      <li v-for="color in colors">
+        {{ color.name }}
+      </li>
+    </ul>
+    <button v-on:click="onClick">Click!</button>
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
