@@ -11,18 +11,8 @@
   <!-- ルートのテンプレート -->
   <!-- Vue.jsが構築したdomに置き換えられる -->
   <div id="app">
-    <h2>computed:</h2>
-    <ol>
-      <li>{{ computedNumber }}</li>
-      <li>{{ computedNumber }}</li>
-      <li>{{ computedNumber }}</;i>
-    </ol>
-    <h2>methods:</h2>
-    <ol>
-      <li>{{ methodsNumber() }}</li>
-      <li>{{ methodsNumber() }}</li>
-      <li>{{ methodsNumber() }}</li>
-    </ol>
+    <p>{{ message }}</p>
+    <input type="text" v-model="message">
   </div>
   <!-- CDNパッケージを読み込む。bodyの終了タグの直前に配置する。 -->
   <script src="https://unpkg.com/vue@3.1.5"></script>
